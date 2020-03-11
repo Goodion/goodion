@@ -20,16 +20,16 @@
                     <li>
                         <a href="/about">О нас</a>
                     </li>
-                    <li><a href="/reviews">Отзывы</a></li>
+                    <li><a href="/feedback">Обратная связь</a></li>
                 </ul>
             </div>
             <div class="col-lg-2 col-md-3  offset-lg-1 offset-md-1">
                 <ul>
                     <li>
-                        <a href="/deliveryandpayment">Доставка и оплата</a>
+                        <a href="/delivery_payment">Доставка и оплата</a>
                     </li>
                     <li>
-                        <a href="/offers">Акции</a>
+                        <a href="/offers_news">Акции и новости</a>
                     </li>
                 </ul>
             </div>

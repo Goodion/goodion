@@ -6,7 +6,7 @@
 @if ($level === 'error')
 # @lang('Ой!')
 @else
-# @lang('Привет!')
+# @lang('Goodion на связи!')
 @endif
 @endif
 
@@ -51,7 +51,7 @@
 @isset($actionText)
 @slot('subcopy')
 @lang(
-    "Если кнопка \":actionText\" недоступна, скопируйте и вставьте в адресную строку Вашего браузера следующую ссылку:\n".
+    "Если кнопка \":actionText\" недоступна, скопируйте и вставьте в адресную строку вашего браузера следующую ссылку:\n".
     '[:actionURL](:actionURL)',
     [
         'actionText' => $actionText,

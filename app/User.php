@@ -48,4 +48,11 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         $this->notify(new VerifyEmail());
     }
+
+    public function isAdmin()
+    {
+        if ($this->email == config('config.admin_email')) {
+            return true;
+        }
+    }
 }

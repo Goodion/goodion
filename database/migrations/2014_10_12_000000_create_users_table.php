@@ -21,11 +21,20 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-            $table->string('phone');
-            $table->integer('amount_of_purchases');
-            $table->string('address_1');
-            $table->string('address_2');
+            $table->string('phone')->nullable();
+            $table->integer('amount_of_purchases')->default(0);
+            $table->integer('discount')->default(0);
+            $table->string('city')->nullable();
+            $table->string('house')->nullable();
+            $table->string('flat')->nullable();
+            $table->integer('privileges')->default(0);
         });
+
+        DB::table('users')->insert([
+            'name' => 'Администратор',
+            'email' => config('config.admin_email'),
+            'password' => config('config.admin_password'),
+        ]);
     }
 
     /**

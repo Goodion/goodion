@@ -46,13 +46,13 @@ class VerifyEmail extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                ->subject('Подтверждение электронной почты на Goodion.ru')
+                ->subject('Подтверждение адреса электронной почты на Goodion.ru')
                 ->line('Чтобы подтвердить электронную почту на www.goodion.ru, перейдите по ссылке:')
                 ->action(
                     Lang::get('Подтвердить адрес'),
                     $this->verificationUrl($notifiable)
                 )
-                ->line('Срок действия ссылки для подтверждения пароля истекает через 60 минут.');
+                ->line('Срок действия ссылки для подтверждения адреса электронной почты истекает через 60 минут.');
     }
 
     protected function verificationUrl($notifiable)

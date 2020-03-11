@@ -16,10 +16,11 @@ Route::get('/delivery_payment', function () {
     return view('delivery_payment');
 });
 
-Route::get('/offers_news', function () {
-    return view('offers_news');
-});
+Route::get('/offers_news', 'OffersNewsController@index');
 
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Route::resource('news', 'NewsController');
+//Route::resource('offers', 'OffersController');

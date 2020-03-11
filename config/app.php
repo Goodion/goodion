@@ -174,8 +174,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Buzz\LaravelGoogleCaptcha\CaptchaServiceProvider::class,
 
+        /*
+         * Custom Service Providers...
+         */
+        Buzz\LaravelGoogleCaptcha\CaptchaServiceProvider::class,
     ],
 
     /*

@@ -78,7 +78,7 @@
 /* Custom styles */
 
 .registration_authorisation_form {
-    padding-top: 110px; }
+    padding-top: 60px; }
 
 .btn-primary {
     color: #fff;
@@ -105,6 +105,39 @@
     font-size: 80%;
     color: #dc3545;
 }
+
+.delivery_payment h1 {
+    font-size: 22px;
+    font-family: MontserratBold;
+    font-weight: 900;
+    color: #434343;
+    padding-top: 15px;
+    padding-bottom: 20px; }
+
+.delivery_payment h3 {
+    font-size: 18px;
+    font-family: MontserratBold;
+    font-weight: 900;
+    color: #434343;
+    margin-left: -20px;
+    padding-top: 20px;
+    padding-bottom: 0px; }
+
+.delivery_payment h4 {
+    font-size: 18px;
+    font-family: MontserratMedium;
+    text-decoration: underline;
+    color: #434343;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+.delivery_payment .right h3 {
+    margin-left: 0px;
+    margin-right: -20px; }
+
+.delivery_payment .text__box p {
+    font-family: MontserratRegular;
+    text-align: justify; }
 
 /* End custom styles */
 
