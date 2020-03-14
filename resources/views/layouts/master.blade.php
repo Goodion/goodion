@@ -30,6 +30,7 @@
 
 </head>
 <body>
+
 @include('layouts.top')
 
 @include('layouts.header')

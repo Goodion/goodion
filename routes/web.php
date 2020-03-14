@@ -16,7 +16,13 @@ Route::get('/delivery_payment', function () {
     return view('delivery_payment');
 });
 
+Route::get('/users_agreement', function () {
+    return view('users_agreement');
+});
+
 Route::get('/offers_news', 'OffersNewsController@index');
+
+Route::post('/city_choice', 'CityCookieController@placeCityCookie');
 
 Auth::routes(['verify' => true]);
 

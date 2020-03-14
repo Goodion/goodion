@@ -37,15 +37,3 @@ $city.suggestions({
     bounds: "city-settlement",
     onSuggestionsFetch: removeNonCity
 });
-
-// Определяем город по IP-адресу
-$city.suggestions().getGeoLocation()
-    .done(function(locationData) {
-        var sgt = {
-            value: null,
-            date: locationData
-        };
-        console.log(locationData);
-        $city.suggestions().setSuggestion(sgt);
-        $city.val(cityToString(locationData));
-    });

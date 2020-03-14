@@ -11,8 +11,8 @@ class OffersNewsController extends Controller
 {
     public function index()
     {
-        $news = News::where('published', true)->get();
-        $offers = Offer::where('published', true)->get();
+        $news = News::where('published', true)->latest()->get();
+        $offers = Offer::where('published', true)->latest()->get();
 
         return view('offers_news', compact('offers', 'news'));
     }

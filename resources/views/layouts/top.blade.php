@@ -3,9 +3,9 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-3 header__contact">
-                <a href="#"><img src="/img/icon/whatsapp.png" alt=""></a>
-                <a href="tg://resolve?domain="><img src="/img/icon/telegram.png" alt=""></a>
-                <a href="viber://add?number=88001234567">
+                <a href="https://wa.me/79067858470" target="_blank"><img src="/img/icon/whatsapp.png" alt=""></a>
+                <a href="https://telegram.im/@i_goodion" target="_blank"><img src="/img/icon/telegram.png" alt=""></a>
+                <a href="viber://chat?number=%2B79257203367" target="_blank">
                     <img src="/img/icon/viber.png" alt=""></a>
             </div>
             <div class="col-md-auto m-auto header__tel">

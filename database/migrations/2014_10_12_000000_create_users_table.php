@@ -33,7 +33,8 @@ class CreateUsersTable extends Migration
         DB::table('users')->insert([
             'name' => 'Администратор',
             'email' => config('config.admin_email'),
-            'password' => config('config.admin_password'),
+            'password' => password_hash(config('config.admin_password'), PASSWORD_DEFAULT),
+            'email_verified_at' => '01.01.2010',
         ]);
     }
 
